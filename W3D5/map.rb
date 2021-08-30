@@ -1,7 +1,9 @@
 class Map
-  attr_reader :underlying_arr
-   def initialize(key, value)
-     @underlying_arr = []
-   end
+  def initialize
+    @stacks = []
+  end
 
- end
+  def set(key, value)
+
+  end
+end
