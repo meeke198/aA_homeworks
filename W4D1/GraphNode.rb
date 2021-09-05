@@ -4,6 +4,13 @@ class GraphNode
         self.value = value
         self.neighbors = []
     end
+
+    def add_neighbor(neighbor_node)
+        self.neighbors << neighbor_node
+    end
+
+
+
     def bfs(starting_node, target_value)
         visited = Set.new()
         queue = [starting_node]
