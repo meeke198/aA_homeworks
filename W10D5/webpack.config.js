@@ -1,9 +1,9 @@
 var path = require('path');
 
 module.exports = {
-    entry: './frontend/entry.jsx',
+    entry: './skeleton/entry.jsx',
     output: {
-        filename: './bundle.js',
+        filename: '.budle.js',
     },
     module: {
         rules: [
