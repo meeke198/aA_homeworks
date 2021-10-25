@@ -14,35 +14,10 @@ class Rainbow extends React.Component {
     return (
       <div>
         <h1>Rainbow Router!</h1>
-        <NavLink exact to="/blue">
-          Blue only
-        </NavLink>
-        {/* <Route path="/blue" component={Blue} />
-            <Route exact to="/green">
-              Green
-              <Green />
-            </Route>
-            <Route exact to="/red">
-              Red only
-              <Red />
-            </Route>
-            <Route exact to="/violet">
-              Violet only
-              <Violet />
-            </Route>
-          </Switch>
-          <Link to="/blue/indigo">Add indigo</Link>
-          <Link to="/red/orange">Add Orange</Link>
-          <Link to="/red/yellow">Add Yellow</Link> */}
-        <NavLink exact to="/red">
-          Red only
-        </NavLink>
-        <NavLink exact to="/green">
-          Green only
-        </NavLink>
-        <NavLink exact to="/violet">
-          Violet only
-        </NavLink>
+        <NavLink exact to="/blue">Blue only</NavLink>
+        <NavLink exact to="/red">Red only</NavLink>
+        <NavLink exact to="/green">Green only</NavLink>
+        <NavLink exact to="/violet">Violet only</NavLink>
         {/* Your links should go here */}
 
         {/* get to blue/indigo, and then back to /blue */}
