@@ -137,6 +137,14 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         className: "blue"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        exact: true,
+        to: "/blue"
+      }, "Blue only"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/blue/indigo"
+      }, "Add indigo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/blue/indigo",
+        component: _indigo__WEBPACK_IMPORTED_MODULE_2__["default"]
       }));
     }
   }]);
@@ -234,9 +242,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _green__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./green */ "./components/green.jsx");
 /* harmony import */ var _blue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blue */ "./components/blue.jsx");
 /* harmony import */ var _violet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./violet */ "./components/violet.jsx");
-/* harmony import */ var _indigo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./indigo */ "./components/indigo.jsx");
-/* harmony import */ var _yellow__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./yellow */ "./components/yellow.jsx");
-/* harmony import */ var _orange__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./orange */ "./components/orange.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -260,10 +265,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
-
-
-
+ // import Indigo from "./indigo";
+// import Yellow from "./yellow";
+// import Orange from "./orange";
 
 var Rainbow =
 /*#__PURE__*/
@@ -280,20 +284,16 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Rainbow Router!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        exact: true,
         to: "/blue"
-      }, "Blue only"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        exact: true,
+      }, "Blue"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         to: "/red"
-      }, "Red only"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        exact: true,
+      }, "Red"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         to: "/green"
-      }, "Green only"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        exact: true,
+      }, "Green"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         to: "/violet"
-      }, "Violet only"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Violet"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "rainbow"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Switch, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/red",
         component: _red__WEBPACK_IMPORTED_MODULE_2__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
@@ -305,16 +305,7 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/violet",
         component: _violet__WEBPACK_IMPORTED_MODULE_5__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/red/orange",
-        component: _orange__WEBPACK_IMPORTED_MODULE_8__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/red/yellow",
-        component: _yellow__WEBPACK_IMPORTED_MODULE_7__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/blue/indigo",
-        component: _indigo__WEBPACK_IMPORTED_MODULE_6__["default"]
-      }))));
+      })));
     }
   }]);
 
@@ -378,6 +369,19 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         className: "red"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        exact: true,
+        to: "/red"
+      }, "Red only"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/red/orange"
+      }, "Add orange"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/red/yellow"
+      }, "Add yellow"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/red/orange",
+        component: _orange__WEBPACK_IMPORTED_MODULE_2__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/red/yellow",
+        component: _yellow__WEBPACK_IMPORTED_MODULE_3__["default"]
       }));
     }
   }]);
